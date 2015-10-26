@@ -1,0 +1,105 @@
+
+----------  代码规范  -----------
+
+--- 变量访问区域 ----
+e     用户定义             ep:  UIView *etvLeftMenu
+et    临时变量             ep:  UIView *etvLeftMenu
+ev    成员变量             ep:  UIView *evvLeftMenu
+ef    成员函数指针          ep:  XXTestFunction *efDoSomething
+
+--- 方法 ----
+ep    代理方法
+eg    全局变量
+es    静态变量
+egf   全局方法
+
+ef    public方法
+_ef   private方法
+
+--- 后缀 ----
+VC    UIViewController
+
+------------ 命名规则 -----------
+
+变量命名      访问区域 + 类型缩写(小写) + [ 形容词 | 变量名称 ]      ep:   UIView *evvLeftMenu
+未知类型变量命名    访问区域 + [ 形容词 | 变量名称 ]                 ep:   TestClass *evProject(成员变量) ,TestClass *egProject(全局变量) , TestClass *etProject(临时变量) ...
+
+
+回调协议命名   项目前缀 + 协议名称 + Delegate         ep:   UITableViewDelegate
+接口协议命名   项目前缀 + 协议名称 + Interface        ep:   XXDataModelInterface
+类名          项目前缀 + 类名称                      ep:  UIView
+方法命名       方法前缀 + [形容词] + 动词 + [形容词] + 名词 ...   ep: - (CGFloat)hardlyCalculateTotalValue
+
+--- 变量前缀类型缩写 ----
+
+v     UIView                ep:   UIView *evvLeftMenu
+lb    UILabel               ep:   UIView *evlbTotalPrice
+btn   UIButton
+img   UIImage
+imgv  UIImageView
+sgmt  UISegmentControl
+tb    UIXLFTabBar
+tbi   UIXLFTabBarItem
+tbv   UITableView
+tbvc  UITableViewCell
+wbv   UIWebView
+txf   UITextField
+swt   UISwitch
+sld   UISlider
+aiv   UIAcitvityIndicatorView
+prgv  UIProgressView
+pgc   UIPageControl
+stp   UIStepper
+cv    UICollectionView
+cvc   UICollectionViewCell
+crv   UICollectionReusableView
+txv   UITextView
+srv   UIScrollView
+dtp   UIDatePiker
+pv    UIPikerView
+mpk   UIMapKitView
+nvb   UINavigationBar
+nvi   UINavigationItem
+tlb   UIToolBar
+bbi   UIBarButtonItem
+scb   UISearchBar
+sdc   UISearchDisplayController
+gtr   UIGestureRecognizer
+blc   block                             ep：void (^evblcCallback)(BOOL success);
+
+--- 各个分辨率对应的Size Class ----
+
+iPhone4S,iPhone5/5s,iPhone6
+竖屏：(w:Compact h:Regular)
+横屏：(w:Compact h:Compact)
+
+iPhone6 Plus
+竖屏：(w:Compact h:Regular)
+横屏：(w:Regular h:Compact)
+
+iPad
+竖屏：(w:Regular h:Regular)
+横屏：(w:Regular h:Regular)
+
+Apple Watch(猜测)
+竖屏：(w:Compact h:Compact)
+横屏：(w:Compact h:Compact)
+
+@"{
+    //自定义参数
+    "userinfo":
+    {
+        "name":"remote notice"
+    },
+    //标准写法
+    "aps":
+    {
+        "alert":
+        {
+            "action-loc-key":"Open",//支持多语言
+            "body":"messgae content"//消息正文
+        },
+        "badge":1,//为App 的icon  标记 具体数值
+        "sound":"default" //播放的音频文件,default 表示系统默认的选择列铃声
+    }
+}";

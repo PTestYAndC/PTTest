@@ -1,0 +1,59 @@
+Files(文件夹分类)
+	TJBaseClass（基类）
+	  BaseCell    (基类Cell)
+	  BaseControl (基类控件)
+	  BaseDTO     (基类模型)
+	  BaseVC      (基类控制器)
+	TJCategoryExtern (扩展类)
+	
+	TJClasses (控制器＋数据模型＋控件－MVC)
+
+	TJCustomUI (自定义UI 控件)
+
+	TJIntrouduceFiles (介绍性文件)
+
+	TJLibrary (第三方类库)
+
+	TJMangerHeaderFiles (头文件管理)
+	
+	TJNetService (网络请求)
+
+	TJResources (图片资源)
+
+	TJShareInstance (全局单例)
+	  InstanceManger (全局管理对象)
+	  InstanceUser   (用户全局对象)
+
+
+
+
+Macro
+这个目录下放了整个应用会用到的宏定义，里面大概是这样：
+Macro
+    |- AppMacro.h
+    |- NotificationMacro.h
+    |- VendorMacro.h
+    |- UtilsMacro.h
+
+AppMacro.h 里放app相关的宏定义，如:
+// 表情相关
+#define EMOTION_CACHE_PATH @"cachedemotions"
+
+NotificationMacro.h 里放的是通知相关的宏定义
+
+UtilsMacro.h 里放的是一些方便使用的宏定义，如：
+#define UIColorFromRGB(r,g,b) 
+
+
+
+Vendors
+这个目录放第三方的类库/SDK，如UMeng、WeiboSDK、WeixinSDK等等。
+
+Sections
+这个目录下面的文件对应的是app的具体单元，如导航、瀑布流等等。里面大概是这样：
+Sections
+    |- Menu
+    |- Setting
+
+Resources
+这个目录下放的是app会用到的一些资源，主要是图片。
