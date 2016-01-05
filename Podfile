@@ -10,3 +10,4 @@ pod "SloppySwiper", '~>0.4'
 pod 'MJExtension', '~> 2.5.15'
 pod 'DZNEmptyDataSet', '~> 1.7.2'
 pod "YYKit"
+pod 'wax', :git=>'https://github.com/alibaba/wax.git', :tag=>'1.1.0'

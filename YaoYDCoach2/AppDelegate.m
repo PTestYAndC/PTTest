@@ -10,6 +10,8 @@
 #import "TabBarVC.h"
 #import "NavigationController.h"
 
+#import <wax.h>
+
 @interface AppDelegate ()
 
 @end
@@ -18,6 +20,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+
+    [self downloadLuaFile];
     
     self.window                     = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor     = [UIColor whiteColor];
@@ -54,6 +59,38 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)downloadLuaFile{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSString *fileName = @"change_002.lua";     //本地要保存的文件名称。
+        NSString *doc = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+        NSString *directory = [doc stringByAppendingPathComponent:fileName];
+        
+        NSURL *url=[NSURL URLWithString:@"http://localhost/init.lua"];        //lua文件的服务器地址
+
+        NSURLRequest *request=[NSURLRequest requestWithURL:url];
+        
+        NSError *error=nil;
+        
+        NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:&error];
+        
+        if([data length]>0)
+            
+        {
+            NSLog(@"下载成功");
+            if([data writeToFile:directory atomically:YES]){
+                NSLog(@"保存成功");
+                NSString *luaFilePath = [[NSString alloc ] initWithFormat:@"%@/?.lua;%@/?/init.lua;%@/?.dat;",doc, doc,doc];
+                setenv(LUA_PATH, [luaFilePath UTF8String], 1); //设置LUA路径
+                wax_start("change_002.lua", nil);
+            }else {
+                NSLog(@"保存失败");
+            }
+        } else {
+            NSLog(@"下载失败，失败原因：%@",error);
+        }
+    });
 }
 
 @end

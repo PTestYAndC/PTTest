@@ -36,4 +36,7 @@
 //设置颜色RGB
 #define COLOR(R, G, B, A)    [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
 
+//用宏定义检测block是否可用   --YM
+#define BLOCK_EXEC(block, ...) if (block) { block(__VA_ARGS__); };
+
 #endif /* UtilsMacro_h */

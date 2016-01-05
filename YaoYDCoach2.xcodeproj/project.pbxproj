@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0568C59F5A703AD38BAC5B66 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5DDCEB2A5C1AD86C3BAEE1A /* libPods.a */; };
+		9912B7C61C3A5BBE0041BC44 /* AppDelegateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9912B7C51C3A5BBE0041BC44 /* AppDelegateHelper.m */; };
+		9912B7D11C3A68260041BC44 /* AppDelegateService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9912B7D01C3A68260041BC44 /* AppDelegateService.m */; };
+		9912B7D71C3A68530041BC44 /* AppDelegateApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 9912B7D61C3A68530041BC44 /* AppDelegateApi.m */; };
 		9913D1811C167B14009363E8 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9913D1801C167B14009363E8 /* RequestManager.m */; };
 		9913D1831C16CD52009363E8 /* xs.png in Resources */ = {isa = PBXBuildFile; fileRef = 9913D1821C16CD52009363E8 /* xs.png */; };
 		991476621C07F09A0058782C /* 目录结构说明.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9914763F1C07F09A0058782C /* 目录结构说明.txt */; };
@@ -74,6 +77,12 @@
 
 /* Begin PBXFileReference section */
 		0731F62758DAA08BD0D5E6FC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9912B7C41C3A5BBE0041BC44 /* AppDelegateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegateHelper.h; sourceTree = "<group>"; };
+		9912B7C51C3A5BBE0041BC44 /* AppDelegateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateHelper.m; sourceTree = "<group>"; };
+		9912B7CF1C3A68260041BC44 /* AppDelegateService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegateService.h; sourceTree = "<group>"; };
+		9912B7D01C3A68260041BC44 /* AppDelegateService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateService.m; sourceTree = "<group>"; };
+		9912B7D51C3A68530041BC44 /* AppDelegateApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegateApi.h; sourceTree = "<group>"; };
+		9912B7D61C3A68530041BC44 /* AppDelegateApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateApi.m; sourceTree = "<group>"; };
 		9913D17F1C167B14009363E8 /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestManager.h; sourceTree = "<group>"; };
 		9913D1801C167B14009363E8 /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestManager.m; sourceTree = "<group>"; };
 		9913D1821C16CD52009363E8 /* xs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xs.png; sourceTree = "<group>"; };
@@ -188,6 +197,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9912B7C21C3A5B5A0041BC44 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9912B7D81C3A69DE0041BC44 /* Models */,
+				9912B7C71C3A5C130041BC44 /* AppDelegateService */,
+				9912B7C81C3A5C130041BC44 /* AppDelegateApi */,
+				9912B7C31C3A5BBE0041BC44 /* APPDelegateHelper */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		9912B7C31C3A5BBE0041BC44 /* APPDelegateHelper */ = {
+			isa = PBXGroup;
+			children = (
+				9912B7C41C3A5BBE0041BC44 /* AppDelegateHelper.h */,
+				9912B7C51C3A5BBE0041BC44 /* AppDelegateHelper.m */,
+			);
+			path = APPDelegateHelper;
+			sourceTree = "<group>";
+		};
+		9912B7C71C3A5C130041BC44 /* AppDelegateService */ = {
+			isa = PBXGroup;
+			children = (
+				9912B7CF1C3A68260041BC44 /* AppDelegateService.h */,
+				9912B7D01C3A68260041BC44 /* AppDelegateService.m */,
+			);
+			path = AppDelegateService;
+			sourceTree = "<group>";
+		};
+		9912B7C81C3A5C130041BC44 /* AppDelegateApi */ = {
+			isa = PBXGroup;
+			children = (
+				9912B7D51C3A68530041BC44 /* AppDelegateApi.h */,
+				9912B7D61C3A68530041BC44 /* AppDelegateApi.m */,
+			);
+			path = AppDelegateApi;
+			sourceTree = "<group>";
+		};
+		9912B7D81C3A69DE0041BC44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9913D17E1C167ABD009363E8 /* Network2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +269,7 @@
 		991476421C07F09A0058782C /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				9912B7C21C3A5B5A0041BC44 /* AppDelegate */,
 				9929C9DE1C0EA0010014A38F /* BaseClass */,
 				991476491C07F09A0058782C /* MainTab */,
 				991476931C07F73F0058782C /* Course */,
@@ -948,11 +1003,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				997F90001C1144EB0000A706 /* CourseService.m in Sources */,
+				9912B7D71C3A68530041BC44 /* AppDelegateApi.m in Sources */,
 				991476921C07F6440058782C /* TabBarView.m in Sources */,
 				9929C9F41C0EA0010014A38F /* BaseObject.m in Sources */,
 				9929C9F61C0EA0010014A38F /* BaseService.m in Sources */,
 				994172EB1C18461D0005DAA7 /* ErrorResposeModel.m in Sources */,
 				9929CA001C0EA0710014A38F /* BaseAPIWork.m in Sources */,
+				9912B7C61C3A5BBE0041BC44 /* AppDelegateHelper.m in Sources */,
 				9929C9F21C0EA0010014A38F /* BaseViewController.m in Sources */,
 				9929C9F51C0EA0010014A38F /* BaseModel.m in Sources */,
 				991476A71C07F7C80058782C /* MineVC.m in Sources */,
@@ -968,6 +1025,7 @@
 				992FACB91C07EF7900168B15 /* main.m in Sources */,
 				997F8FFD1C11438F0000A706 /* CourseApi.m in Sources */,
 				9929CA141C0EF3D80014A38F /* BaseTableViewController.m in Sources */,
+				9912B7D11C3A68260041BC44 /* AppDelegateService.m in Sources */,
 				9929CA011C0EA0710014A38F /* BaseRequestConfig.m in Sources */,
 				9913D1811C167B14009363E8 /* RequestManager.m in Sources */,
 				991476861C07F21E0058782C /* NavigationController.m in Sources */,

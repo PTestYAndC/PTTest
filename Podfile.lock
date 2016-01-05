@@ -41,6 +41,7 @@ PODS:
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
   - SloppySwiper (0.5)
+  - wax (1.0.0)
   - YYKit (0.2.0):
     - YYKit/no-arc (= 0.2.0)
   - YYKit/no-arc (0.2.0)
@@ -56,7 +57,18 @@ DEPENDENCIES:
   - ReactiveCocoa (~> 2.5)
   - SDWebImage (~> 3.7.3)
   - SloppySwiper (~> 0.4)
+  - wax (from `https://github.com/alibaba/wax.git`, tag `1.1.0`)
   - YYKit
+
+EXTERNAL SOURCES:
+  wax:
+    :git: https://github.com/alibaba/wax.git
+    :tag: 1.1.0
+
+CHECKOUT OPTIONS:
+  wax:
+    :git: https://github.com/alibaba/wax.git
+    :tag: 1.1.0
 
 SPEC CHECKSUMS:
   AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
@@ -69,6 +81,7 @@ SPEC CHECKSUMS:
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   SloppySwiper: 7fdffc91062af8fb80574dee80082cb9e0cee507
+  wax: 81436647513298134a77301514776d8059f94dc1
   YYKit: 1bd14a07d96fb80d08471a8a07c5e3425a3d2a45
 
 COCOAPODS: 0.37.2
