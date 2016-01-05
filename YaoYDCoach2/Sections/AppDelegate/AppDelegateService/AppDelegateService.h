@@ -10,6 +10,6 @@
 #import "AppDelegateApi.h"
 @interface AppDelegateService : BaseService
 
-+ (void)featchErrorInfo:(void(^)(BOOL isSuccess,,NSString *message))sd;
++ (void)featchErrorInfo:(void(^)(BOOL isSuccess,NSString *message))sd;
 
 @end

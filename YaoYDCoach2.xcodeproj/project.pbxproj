@@ -55,6 +55,7 @@
 		994172EB1C18461D0005DAA7 /* ErrorResposeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 994172EA1C18461D0005DAA7 /* ErrorResposeModel.m */; };
 		997F8FFD1C11438F0000A706 /* CourseApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 997F8FFC1C11438F0000A706 /* CourseApi.m */; };
 		997F90001C1144EB0000A706 /* CourseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 997F8FFF1C1144EB0000A706 /* CourseService.m */; };
+		99C60D951C3BA67E0003F76A /* UIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C60D941C3BA67E0003F76A /* UIAlertView+Block.m */; };
 		99E4B6BB1C0D713200663D71 /* 模块梳理.txt in Resources */ = {isa = PBXBuildFile; fileRef = 99E4B6BA1C0D713200663D71 /* 模块梳理.txt */; };
 /* End PBXBuildFile section */
 
@@ -166,6 +167,8 @@
 		997F8FFC1C11438F0000A706 /* CourseApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseApi.m; sourceTree = "<group>"; };
 		997F8FFE1C1144EB0000A706 /* CourseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseService.h; sourceTree = "<group>"; };
 		997F8FFF1C1144EB0000A706 /* CourseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseService.m; sourceTree = "<group>"; };
+		99C60D931C3BA67E0003F76A /* UIAlertView+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Block.h"; sourceTree = "<group>"; };
+		99C60D941C3BA67E0003F76A /* UIAlertView+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Block.m"; sourceTree = "<group>"; };
 		99E4B6BA1C0D713200663D71 /* 模块梳理.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "模块梳理.txt"; sourceTree = "<group>"; };
 		E5DDCEB2A5C1AD86C3BAEE1A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E958272FBCAF465DA2FDC94E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -396,13 +399,6 @@
 				991476B21C0810800058782C /* tab04@2x.png */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		9914765C1C07F09A0058782C /* Vendors */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vendors;
 			sourceTree = "<group>";
 		};
 		9914765D1C07F09A0058782C /* General */ = {
@@ -761,10 +757,10 @@
 		992FACB61C07EF7900168B15 /* YaoYDCoach2 */ = {
 			isa = PBXGroup;
 			children = (
+				99C60D921C3BA6750003F76A /* Vendors */,
 				9914763E1C07F09A0058782C /* Explains */,
 				9914765B1C07F09A0058782C /* Resources */,
 				991476421C07F09A0058782C /* Sections */,
-				9914765C1C07F09A0058782C /* Vendors */,
 				9914765D1C07F09A0058782C /* General */,
 				9914765F1C07F09A0058782C /* Macro */,
 				991476611C07F09A0058782C /* Utils */,
@@ -805,6 +801,15 @@
 				992FACDE1C07EF7900168B15 /* Info.plist */,
 			);
 			path = YaoYDCoach2UITests;
+			sourceTree = "<group>";
+		};
+		99C60D921C3BA6750003F76A /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				99C60D931C3BA67E0003F76A /* UIAlertView+Block.h */,
+				99C60D941C3BA67E0003F76A /* UIAlertView+Block.m */,
+			);
+			path = Vendors;
 			sourceTree = "<group>";
 		};
 		BC8ED7495C2E74D030E157A6 /* Frameworks */ = {
@@ -1003,6 +1008,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				997F90001C1144EB0000A706 /* CourseService.m in Sources */,
+				99C60D951C3BA67E0003F76A /* UIAlertView+Block.m in Sources */,
 				9912B7D71C3A68530041BC44 /* AppDelegateApi.m in Sources */,
 				991476921C07F6440058782C /* TabBarView.m in Sources */,
 				9929C9F41C0EA0010014A38F /* BaseObject.m in Sources */,

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YaoYDCoach2/Sections/Course/Controllers/CreateCourseVC.m"
-            timestampString = "471344971.642076"
+            timestampString = "473673225.180022"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "-rightItemClick:"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YaoYDCoach2/Sections/Course/Controllers/CreateCourseVC.m"
-            timestampString = "471348327.896748"
+            timestampString = "473673225.180022"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "-requsetForXX"
             landmarkType = "5">
          </BreakpointContent>

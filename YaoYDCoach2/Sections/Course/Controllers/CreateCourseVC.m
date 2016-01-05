@@ -9,7 +9,9 @@
 #import "CreateCourseVC.h"
 #import "BaseRequestManager.h"
 #import "RequestManager.h"
-@interface CreateCourseVC ()
+
+#import "UIAlertView+Block.h"
+@interface CreateCourseVC ()<UIAlertViewDelegate>
 
 @end
 
@@ -31,7 +33,7 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated{
-    [self requsetForXX];
+//    [self requsetForXX];
     [super viewDidAppear:animated];
 }
 
@@ -54,6 +56,19 @@
 
 - (void)rightItemClick:(id)sender{
     
+}
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    UIAlertView *alView = [[UIAlertView alloc] initWithTitle:@"sda" message:@"adaa" delegate:self cancelButtonTitle:@"ok" otherButtonTitles: nil];
+    [alView block_clickedButtonAtIndexWithBlock:^(UIAlertView *alert, NSInteger index) {
+        NSLog(@"adaasdaad");
+    }];
+    [alView show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    NSLog(@"ada");
 }
 
 /*
