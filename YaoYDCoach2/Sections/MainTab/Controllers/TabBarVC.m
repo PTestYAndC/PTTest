@@ -34,7 +34,7 @@
     //保留两位小数，直接进1(天花板函数)
     CGFloat rounded_up1 = ceilf(0.355 * 100) / 100;
     NSLog(@"%.2lf",rounded_up1);
-    
+      
     //保留两位小数，舍弃后面所有位数。(地板函数)
     CGFloat rounded_up2 = floor(0.355 * 100) / 100;
     NSLog(@"%.2lf",rounded_up2);
